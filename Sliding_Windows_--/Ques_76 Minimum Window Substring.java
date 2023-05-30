@@ -5,6 +5,7 @@ class Solution {
         int ept=0;
         int len=Integer.MAX_VALUE;
         String ans="";
+        
         for(int i=0;i<t.length();i++){
             char ch=t.charAt(i);
             if(!map.containsKey(ch)) map.put(ch,1);
