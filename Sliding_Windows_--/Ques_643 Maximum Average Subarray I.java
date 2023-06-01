@@ -15,5 +15,6 @@ class Solution {
             }
         }
         return (ans*1.0)/k;
+        
     }
 }
