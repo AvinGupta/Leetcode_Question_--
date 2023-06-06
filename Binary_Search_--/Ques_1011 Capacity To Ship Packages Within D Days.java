@@ -1,5 +1,6 @@
 //This Question based on advanced binary search
 // It is similiar to book allocation problem
+
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
         int s_pt=0;
