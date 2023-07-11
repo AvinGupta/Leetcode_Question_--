@@ -4,6 +4,8 @@ class Solution {
         while(s_pt<=e_pt){
             int mid=s_pt+(e_pt-s_pt)/2;
             if(nums[mid]==target) return mid;
+            // check if left half is sorted or the right half is
+            // then  check the element is lying in that range
             if(nums[s_pt]<=nums[mid]){
                 if(target>=nums[s_pt] && target<nums[mid]) e_pt=mid-1;
                 else s_pt=mid+1;
