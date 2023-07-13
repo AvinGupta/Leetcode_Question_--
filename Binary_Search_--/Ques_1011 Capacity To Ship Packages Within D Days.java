@@ -1,11 +1,13 @@
 //This Question based on advanced binary search
 // It is similiar to book allocation problem
-
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
         int s_pt=0;
         int e_pt=0;
-        for(int var:weights) e_pt+=var;
+        for(int var:weights){
+            e_pt+=var;
+            s_pt=Math.max(s_pt,var);
+        }
         int res=0;
         while(s_pt<=e_pt){
             int mid=s_pt+(e_pt-s_pt)/2;
@@ -19,16 +21,14 @@ class Solution {
     }
     public static boolean isPosb(int[] arr,int mid,int days){
         int var=1;
-        int plcd=0;
-        int i=0;
-        while(i<arr.length){
-            if(plcd+arr[i]<=mid){
-                plcd+=arr[i];
-                i++;
+        int load=0;
+        for(int i=0;i<arr.length;i++){
+            if(load+arr[i]>mid){
+                var++;
+                load=arr[i];
             }
             else{
-                var++;
-                plcd=0;
+                load+=arr[i];
             }
             if(var>days) return false;
         }
