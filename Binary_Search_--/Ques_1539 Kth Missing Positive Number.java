@@ -1,11 +1,11 @@
 class Solution {
     public int findKthPositive(int[] arr, int k) {
         // brute force/naive approch:--
-        // for(int i=0;i<arr.length;i++){
-        //     if(arr[i]<=k) k++;
-        //     else break;
-        // }
-        // return k;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<=k) k++;
+            else break;
+        }
+        return k;
 
         // optimised/better approch:--
         int spt=0;
