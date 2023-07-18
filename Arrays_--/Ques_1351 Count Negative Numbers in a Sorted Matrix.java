@@ -5,6 +5,7 @@ class Solution {
           cnt+=Neg_cnt(grid[i]);
         }
         return cnt;
+        
     }
     public int Neg_cnt(int arr[]){
       int spt=0;
