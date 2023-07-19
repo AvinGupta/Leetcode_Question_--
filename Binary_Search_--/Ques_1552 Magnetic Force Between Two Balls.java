@@ -13,6 +13,7 @@ class Solution {
                 s_pt=mid+1;
             }
             else e_pt=mid-1;
+            
         }
         return res;
     }
