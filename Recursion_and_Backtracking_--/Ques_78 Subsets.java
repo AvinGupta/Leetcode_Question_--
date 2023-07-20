@@ -4,6 +4,7 @@ class Solution {
         List<Integer> lst=new ArrayList<>();
         Sub(nums,lst_1,lst,0);
         return lst_1;
+        
     }
     public static void Sub(int[] arr, List<List<Integer>> lst_1,List<Integer> lst,int ind){
         if(ind==arr.length){
