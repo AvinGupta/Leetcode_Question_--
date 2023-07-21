@@ -9,9 +9,7 @@ class Solution {
             if(arr[i]+ext>=max){
                 lst.add(true);
             }
-            else{
-                lst.add(false);
-            }
+            else lst.add(false);
         }
         return lst;
     }
