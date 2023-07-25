@@ -8,3 +8,20 @@ class Solution {
                                           //here we are taking %n so that answer+k should not exceed n;  
     }
 }
+
+// OR
+
+class Solution {
+    public int findTheWinner(int n, int k) {
+        ArrayList<Integer> lst=new ArrayList<>();
+        for(int i=1;i<=n;i++) lst.add(i);
+        Winner(lst,--k,0);
+        return lst.get(0);
+    }
+    public static void Winner(ArrayList<Integer>lst,int k,int pos){
+        if(lst.size()==1) return;
+        int idx=(pos+k)%lst.size();
+        lst.remove(idx);
+        Winner(lst,k,idx);
+    }
+}
