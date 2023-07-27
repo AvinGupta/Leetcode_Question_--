@@ -1,5 +1,6 @@
 class Solution {
     public int findMin(int[] nums) {
+        
         int spt=0;
         int ept=nums.length-1;
         int ans=Integer.MAX_VALUE;
