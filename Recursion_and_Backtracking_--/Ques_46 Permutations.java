@@ -5,6 +5,7 @@ class Solution {
         Permutation(nums,lst,lst_1);
         return lst_1;
     }
+    
     public static void Permutation(int[] nums,List<Integer> lst,List<List<Integer>> lst_1){
         if(lst.size()==nums.length){
             lst_1.add(new ArrayList<>(lst));
