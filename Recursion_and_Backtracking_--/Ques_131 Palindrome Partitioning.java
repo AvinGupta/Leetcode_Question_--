@@ -14,10 +14,11 @@ class Solution {
             if(Palindrome(stg)){
                 lst.add(stg);
                 Partitioning(lst_1,str.substring(i+1),lst);
-                lst.remove(lst.size()-1);
+                lst.remove(lst.size()-1);//Backtrack
             }
         }
     }
+    //check if all the substring that are generated is palindrome or not.
     public static boolean Palindrome(String str){
         int s_pt=0;
         int e_pt=str.length()-1;
