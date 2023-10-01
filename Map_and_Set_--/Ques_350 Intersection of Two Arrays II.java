@@ -17,9 +17,7 @@ class Solution {
             }
         }
         int[] arr=new int[lst.size()];
-        for(int i=0;i<arr.length;i++){
-            arr[i]=lst.get(i);
-        }
+        for(int i=0;i<arr.length;i++) arr[i]=lst.get(i);
         return arr;
     }
 }
