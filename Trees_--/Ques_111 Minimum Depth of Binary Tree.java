@@ -13,9 +13,7 @@
  *     }
  * }
  */
-
 class Solution {
-
     //Using BFS.
     public int minDepth(TreeNode root) {
         if(root==null) return 0;
@@ -34,7 +32,6 @@ class Solution {
         }
         return 0; //dead line.
     }
-
 
     //Using DFS.
     public int minDepth(TreeNode root){
