@@ -1,8 +1,8 @@
 class Solution {
     public int minDistance(String str1, String str2) {
         int m=str1.length();
-	    int n=str2.length();
-	    int[][] dp=new int[m+1][n+1];
+	int n=str2.length();
+	int[][] dp=new int[m+1][n+1];
         for(int i=0;i<m+1;i++) dp[i][0]=0;
         for(int i=0;i<n+1;i++) dp[0][i]=0;
         for(int i=1;i<m+1;i++){
