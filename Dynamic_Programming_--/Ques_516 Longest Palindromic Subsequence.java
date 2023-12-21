@@ -1,4 +1,4 @@
-class Solution {
+class Solution{
     public int longestPalindromeSubseq(String x) {
         StringBuilder sb=new StringBuilder(x);
         String y=sb.reverse().toString();
