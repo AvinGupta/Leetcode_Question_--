@@ -1,4 +1,4 @@
-class Solution {
+class Solution{
     public int maxUncrossedLines(int[] x, int[] y){
         int m=x.length;
         int n=y.length;
