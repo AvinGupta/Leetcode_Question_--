@@ -1,4 +1,4 @@
-class Solution {
+class Solution{
     public int minDistance(String x, String y) {
         int m=x.length();
         int n=y.length();
