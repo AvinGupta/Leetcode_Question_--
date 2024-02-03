@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public static void dfs(int node,ArrayList<ArrayList<Integer>> lst,boolean[] isVisited){
         isVisited[node]=true;
 
