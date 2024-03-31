@@ -8,7 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution { 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode ln=new ListNode();
         ListNode temp=ln;
