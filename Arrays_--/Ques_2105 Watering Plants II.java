@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public int minimumRefill(int[] nums, int capA, int capB){
         int s_pt=0;
         int e_pt=nums.length-1;
