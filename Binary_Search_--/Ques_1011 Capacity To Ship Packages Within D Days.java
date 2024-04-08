@@ -4,7 +4,7 @@ class Solution {
     public int shipWithinDays(int[] weights, int days) {
         int s_pt=0;
         int e_pt=0;
-        for(int var:weights){
+        for(int var:weights){ 
             e_pt+=var;
             s_pt=Math.max(s_pt,var);
         }
