@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     
     public int minDays(int[] bloomDay, int m, int k) {
         int spt=Integer.MAX_VALUE;
