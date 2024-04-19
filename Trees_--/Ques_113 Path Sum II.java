@@ -25,7 +25,7 @@ class Solution {
             if(tar-root.val==0){
                 arr.add(root.val);
                 lst.add(new ArrayList<>(arr));
-                arr.remove(arr.size()-1);
+                arr.remove(arr.size()-1); 
             }
             return;
         }
