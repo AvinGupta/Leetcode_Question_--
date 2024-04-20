@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public int countNegatives(int[][] grid) {
         int cnt=0;
         for(int i=0;i<grid.length;i++){
