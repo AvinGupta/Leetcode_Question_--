@@ -11,7 +11,7 @@ class Node {
         this.random = null;
     }
 }
-*/
+*/ 
 
 class Solution {
     public static void insertNode(Node head){
