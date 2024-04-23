@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public List<Boolean> kidsWithCandies(int[] arr, int ext) {
         ArrayList<Boolean> lst=new ArrayList<>();
         int max=arr[0];
