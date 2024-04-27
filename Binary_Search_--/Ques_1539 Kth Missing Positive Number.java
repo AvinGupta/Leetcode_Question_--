@@ -1,5 +1,5 @@
 class Solution {
-    public int findKthPositive(int[] arr, int k) {
+    public int findKthPositive(int[] arr, int k) { 
         // brute force/naive approch:--
         for(int i=0;i<arr.length;i++){
             if(arr[i]<=k) k++;
