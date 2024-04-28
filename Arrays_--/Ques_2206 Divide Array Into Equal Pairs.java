@@ -1,5 +1,5 @@
 class Solution {
-    public boolean divideArray(int[] nums) {
+    public boolean divideArray(int[] nums) { 
         int[] arr=new int[501];
         for(int val:nums){
             arr[val]++;
