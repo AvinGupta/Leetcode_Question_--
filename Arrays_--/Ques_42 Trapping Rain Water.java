@@ -13,7 +13,7 @@ class Solution {
         for(int j=nums.length-2;j>=0;j--){
             right[j]=Math.max(right[j+1],nums[j]);
         }
-        
+         
         int result=0;
         for(int i=1;i<nums.length-1;i++){
             result+=Math.min(left[i],right[i])-nums[i];
