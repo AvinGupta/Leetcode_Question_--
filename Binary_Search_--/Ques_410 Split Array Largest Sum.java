@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public int splitArray(int[] nums, int k) {
         int spt=0;
         int ept=0;
