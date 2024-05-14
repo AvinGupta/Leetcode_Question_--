@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public int getWinner(int[] arr, int k) {
         int maxWin=0;
         int  maxNum=arr[0];
