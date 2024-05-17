@@ -5,7 +5,7 @@ class Solution {
         int s_pt=0;
         int e_pt=0;
         for(int var:weights){ 
-            e_pt+=var;
+            e_pt+=var; 
             s_pt=Math.max(s_pt,var);
         }
         int res=0;
