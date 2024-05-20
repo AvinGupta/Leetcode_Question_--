@@ -3,7 +3,7 @@ class Solution {
         int ELE_sum=0;
         int DIG_sum=0;
         for(int var:nums){
-            ELE_sum+=var;
+            ELE_sum+=var; 
             DIG_sum+=dig(var);
         }
         return Math.abs(DIG_sum-ELE_sum);
