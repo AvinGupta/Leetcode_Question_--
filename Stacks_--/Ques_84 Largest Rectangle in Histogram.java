@@ -1,7 +1,7 @@
 class Solution {
     public int largestRectangleArea(int[] heights) {
         return Area(heights);
-    }
+    } 
     public static int Area(int[] arr){
         Stack<Integer> stk=new Stack<>();
         int ans=0;
