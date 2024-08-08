@@ -1,5 +1,5 @@
 class Solution {
-    public int[] nextGreaterElement(int[] arr){
+    public int[] nextSmallerElement(int[] arr){
         Stack<Integer> st=new Stack<>();
         int[] ans=new int[arr.length];
         for(int i=arr.length-1;i>=0;i--){
@@ -27,13 +27,13 @@ class Solution {
         return ans;
     }
     public int sumSubarrayMins(int[] arr) {
-        int[] nge=nextGreaterElement(arr);
+        int[] nse=nextSmallerElement(arr);
         int[] pse=previousSmallerElement(arr);
         long ans=0;
         int mod=(int)1e9+7;
         for(int i=0;i<arr.length;i++){
             int left=i-pse[i];
-            int right=nge[i]-i;
+            int right=nse[i]-i;
             ans=(ans+(long)right*left*arr[i])%mod;
         }
         return (int)ans;
