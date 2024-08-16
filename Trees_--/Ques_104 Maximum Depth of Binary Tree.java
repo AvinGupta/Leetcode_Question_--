@@ -13,7 +13,7 @@
  *     }
  * }
  */
-//Height of the Binary Tree.
+//Height of the Binary Tree
 class Solution {
     public int maxDepth(TreeNode root) {
         if(root==null) return 0;
